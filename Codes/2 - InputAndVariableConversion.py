@@ -15,4 +15,3 @@ currentYear = input("Please enter current year: ")
 
 print("So, now you're " + str(int(currentYear) - int(birthYear)))
 print(type(currentYear))
-MoonyMny
