@@ -2,7 +2,7 @@
 
 # Just need to remember one thing here,
 # the left side of the colon is your starting index, and,
-# the right side of the colon is your ending index - 1.
+# the right side of the colon is your ending index + 1.
 
 print("\n")
 string = "Hello"
