@@ -30,3 +30,7 @@ print(listTwo)
 listOne.remove(5)
 # Just removes the first appearance
 print(listOne)
+
+# Lists can be generated from nearly anything; from strings, sets, tuples, dictionaries, even lists itself!
+a_string = 'some-string'
+print(list(a_string))
