@@ -7,7 +7,7 @@ import math
 # noinspection PyMethodMayBeStatic
 class Point:
 
-    # static var
+    # class variable
     some_int = 10
 
     def __init__(self, x, y):
@@ -20,7 +20,7 @@ class Point:
     def distance(self, x, y):
         return math.sqrt(math.pow(x - self.x, 2) + math.pow(y - self.y, 2))
 
-    # We generally use class method to create factory methods. Factory methods return class object ( similar to a constructor ) for different use cases.
+    # We generally use class method to create factory methods. Factory methods return class object ( similar to a constructor ) for different use cases. It's also used for modifying class variables.
     @classmethod
     def a_class_method(cls, change_var):
         cls.some_int = change_var
