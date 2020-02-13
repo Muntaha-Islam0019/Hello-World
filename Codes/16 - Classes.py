@@ -21,3 +21,4 @@ class Point:
 pointOne = Point(19, 47)
 pointOne.point()
 print(pointOne.distance(0, 0))
+print(pointOne.__dict__)
