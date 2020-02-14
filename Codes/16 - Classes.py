@@ -25,8 +25,17 @@ class Point:
     def a_class_method(cls, change_var):
         cls.some_int = change_var
 
+    @classmethod
+    def another_class_method(cls, some_str):
+        a, b = some_str.split('_')
+        return cls(a, b)
 
-pointOne = Point(19, 47)
-pointOne.point()
-print(pointOne.distance(0, 0))
-print(pointOne.__dict__)
+
+point_one = Point(19, 47)
+point_one.point()
+print(point_one.distance(0, 0))
+print(point_one.__dict__)
+
+point_two = Point.another_class_method('18_20')
+point_two.point()
+print(point_one.distance(int(point_two.x), int(point_two.y)))
